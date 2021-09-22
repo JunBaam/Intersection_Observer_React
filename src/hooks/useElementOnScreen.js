@@ -10,7 +10,9 @@ function useElementOnScreen(options, targetRef) {
     console.log('entrie', entry)
 
     //NOTE: isIntersecting  타겟 요소가 교차되었으면 ture 아니면 false를 반환
-    const value = entries.isIntersecting
+    const value = entries[0].isIntersecting
+
+    console.log('value', value)
     setIsVisible(value)
   }
 
